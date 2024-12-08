@@ -36,8 +36,8 @@ jobs:
     steps:
       - name: Add PNPM
         uses: pnpm/action-setup@v2
-          with:
-            version: 8
+        with:
+          version: 8
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
