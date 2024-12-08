@@ -6,6 +6,7 @@
   idx.extensions = [
     "svelte.svelte-vscode"
     "vue.volar"
+    "astro-build.astro-vscode"
   ];
   idx.previews = {
     previews = {
