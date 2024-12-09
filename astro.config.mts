@@ -6,7 +6,7 @@ import type { Rollup } from 'vite';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://pokerogue-game.github.io',
-    // base: 'pokerogue-game',
+    base: 'pokerogue-game',
     vite: {
         plugins: [
             tsconfigPaths() as any, 
