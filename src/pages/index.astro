@@ -1,5 +1,4 @@
 ---
-import Controls from "../layouts/controls.astro"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -557,6 +556,10 @@ import Controls from "../layouts/controls.astro"
 
 		</div>
 	</div>
-	<Controls />
+	<script>
+        import "#app"
+        import "#app/touch-controls.ts"
+        import "#app/debug.js"
+    </script>
 </body>
 </html>
