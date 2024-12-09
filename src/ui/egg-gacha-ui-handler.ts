@@ -3,7 +3,7 @@ import { Mode } from "./ui";
 import { TextStyle, addTextObject, getEggTierTextTint, getTextStyleOptions } from "./text";
 import MessageUiHandler from "./message-ui-handler";
 import * as Utils from "../utils";
-import { Egg, getLegendaryGachaSpeciesForTimestamp, IEggOptions } from "../data/egg";
+import { Egg, getLegendaryGachaSpeciesForTimestamp, type IEggOptions } from "../data/egg";
 import { VoucherType, getVoucherTypeIcon } from "../system/voucher";
 import { getPokemonSpecies } from "../data/pokemon-species";
 import { addWindow } from "./ui-theme";

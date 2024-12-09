@@ -1,6 +1,6 @@
 import * as Utils from "#app/utils";
 import i18next from "i18next";
-import { defaultStarterSpecies, DexAttrProps, GameData } from "#app/system/game-data";
+import { defaultStarterSpecies, type DexAttrProps, GameData } from "#app/system/game-data";
 import PokemonSpecies, { getPokemonSpecies, getPokemonSpeciesForm } from "#app/data/pokemon-species";
 import { speciesStarterCosts } from "#app/data/balance/starters";
 import Pokemon, { PokemonMove } from "#app/field/pokemon";

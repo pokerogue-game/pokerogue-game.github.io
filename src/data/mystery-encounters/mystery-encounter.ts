@@ -1,4 +1,4 @@
-import { EnemyPartyConfig } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
+import type { EnemyPartyConfig } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
 import Pokemon, { PlayerPokemon, PokemonMove } from "#app/field/pokemon";
 import { capitalizeFirstLetter, isNullOrUndefined } from "#app/utils";
 import { MysteryEncounterType } from "#enums/mystery-encounter-type";
@@ -7,7 +7,7 @@ import MysteryEncounterIntroVisuals, { MysteryEncounterSpriteConfig } from "#app
 import * as Utils from "#app/utils";
 import { StatusEffect } from "#enums/status-effect";
 import MysteryEncounterDialogue, { OptionTextDisplay } from "./mystery-encounter-dialogue";
-import MysteryEncounterOption, { MysteryEncounterOptionBuilder, OptionPhaseCallback } from "./mystery-encounter-option";
+import MysteryEncounterOption, { MysteryEncounterOptionBuilder, type OptionPhaseCallback } from "./mystery-encounter-option";
 import { EncounterPokemonRequirement, EncounterSceneRequirement, HealthRatioRequirement, PartySizeRequirement, StatusEffectRequirement, WaveRangeRequirement } from "./mystery-encounter-requirements";
 import { BattlerIndex } from "#app/battle";
 import { MysteryEncounterTier } from "#enums/mystery-encounter-tier";

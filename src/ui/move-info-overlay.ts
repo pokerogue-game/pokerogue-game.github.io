@@ -1,4 +1,4 @@
-import BattleScene, { InfoToggle } from "../battle-scene";
+import BattleScene, { type InfoToggle } from "../battle-scene";
 import { TextStyle, addTextObject } from "./text";
 import { addWindow } from "./ui-theme";
 import * as Utils from "../utils";

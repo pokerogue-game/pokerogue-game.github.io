@@ -1,4 +1,4 @@
-import { EnemyPartyConfig, generateModifierType, handleMysteryEncounterBattleFailed, initBattleWithEnemyConfig, setEncounterRewards, } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
+import { type EnemyPartyConfig, generateModifierType, handleMysteryEncounterBattleFailed, initBattleWithEnemyConfig, setEncounterRewards, } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
 import { trainerConfigs } from "#app/data/trainer-config";
 import { MysteryEncounterType } from "#enums/mystery-encounter-type";
 import BattleScene from "#app/battle-scene";
@@ -16,7 +16,7 @@ import { Nature } from "#enums/nature";
 import { Moves } from "#enums/moves";
 import { PlayerPokemon } from "#app/field/pokemon";
 import { getEncounterText } from "#app/data/mystery-encounters/utils/encounter-dialogue-utils";
-import { IEggOptions } from "#app/data/egg";
+import type { IEggOptions } from "#app/data/egg";
 import { EggSourceType } from "#enums/egg-source-types";
 import { EggTier } from "#enums/egg-type";
 import { MysteryEncounterOptionBuilder } from "#app/data/mystery-encounters/mystery-encounter-option";

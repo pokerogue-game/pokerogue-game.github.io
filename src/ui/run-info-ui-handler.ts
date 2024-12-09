@@ -1,7 +1,7 @@
 import BattleScene from "../battle-scene";
 import { GameModes } from "../game-mode";
 import UiHandler from "./ui-handler";
-import { SessionSaveData } from "../system/game-data";
+import { type SessionSaveData } from "../system/game-data";
 import { TextStyle, addTextObject, addBBCodeTextObject, getTextColor } from "./text";
 import { Mode } from "./ui";
 import { addWindow } from "./ui-theme";

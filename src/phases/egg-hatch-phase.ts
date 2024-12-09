@@ -1,4 +1,4 @@
-import BattleScene, { AnySound } from "#app/battle-scene";
+import BattleScene, { type AnySound } from "#app/battle-scene";
 import { Egg } from "#app/data/egg";
 import { EggCountChangedEvent } from "#app/events/egg";
 import { PlayerPokemon } from "#app/field/pokemon";

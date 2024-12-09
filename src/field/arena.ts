@@ -1,6 +1,6 @@
 import BattleScene from "#app/battle-scene";
-import { biomePokemonPools, BiomePoolTier, BiomeTierTrainerPools, biomeTrainerPools, PokemonPools } from "#app/data/balance/biomes";
-import { Constructor } from "#app/utils";
+import { biomePokemonPools, BiomePoolTier, type BiomeTierTrainerPools, biomeTrainerPools, type PokemonPools } from "#app/data/balance/biomes";
+import type { Constructor } from "#app/utils";
 import * as Utils from "#app/utils";
 import PokemonSpecies, { getPokemonSpecies } from "#app/data/pokemon-species";
 import { getTerrainClearMessage, getTerrainStartMessage, getWeatherClearMessage, getWeatherStartMessage, Weather } from "#app/data/weather";

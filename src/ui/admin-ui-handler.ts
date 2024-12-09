@@ -2,8 +2,8 @@ import BattleScene from "#app/battle-scene";
 import { Button } from "#app/enums/buttons";
 import { pokerogueApi } from "#app/plugins/api/pokerogue-api";
 import { formatText } from "#app/utils";
-import { FormModalUiHandler, InputFieldConfig } from "./form-modal-ui-handler";
-import { ModalConfig } from "./modal-ui-handler";
+import { FormModalUiHandler, type InputFieldConfig } from "./form-modal-ui-handler";
+import type { ModalConfig } from "./modal-ui-handler";
 import { TextStyle } from "./text";
 import { Mode } from "./ui";
 

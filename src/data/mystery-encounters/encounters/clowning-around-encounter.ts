@@ -1,4 +1,4 @@
-import { EnemyPartyConfig, generateModifierType, initBattleWithEnemyConfig, leaveEncounterWithoutBattle, loadCustomMovesForEncounter, selectPokemonForOption, setEncounterRewards, transitionMysteryEncounterIntroVisuals } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
+import { type EnemyPartyConfig, generateModifierType, initBattleWithEnemyConfig, leaveEncounterWithoutBattle, loadCustomMovesForEncounter, selectPokemonForOption, setEncounterRewards, transitionMysteryEncounterIntroVisuals } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
 import { trainerConfigs, TrainerPartyCompoundTemplate, TrainerPartyTemplate, } from "#app/data/trainer-config";
 import { ModifierTier } from "#app/modifier/modifier-tier";
 import { ModifierPoolType, modifierTypes, PokemonHeldItemModifierType } from "#app/modifier/modifier-type";
@@ -19,7 +19,7 @@ import { randSeedInt, randSeedShuffle } from "#app/utils";
 import { showEncounterDialogue, showEncounterText } from "#app/data/mystery-encounters/utils/encounter-dialogue-utils";
 import { Mode } from "#app/ui/ui";
 import i18next from "i18next";
-import { OptionSelectConfig } from "#app/ui/abstact-option-select-ui-handler";
+import type { OptionSelectConfig } from "#app/ui/abstact-option-select-ui-handler";
 import { PlayerPokemon, PokemonMove } from "#app/field/pokemon";
 import { Ability } from "#app/data/ability";
 import { BerryModifier } from "#app/modifier/modifier";

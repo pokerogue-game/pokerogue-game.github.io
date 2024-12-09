@@ -12,7 +12,7 @@ import { BerryModifier, HealingBoosterModifier, LevelIncrementBoosterModifier, M
 import { modifierTypes, PokemonHeldItemModifierType } from "#app/modifier/modifier-type";
 import { ModifierRewardPhase } from "#app/phases/modifier-reward-phase";
 import i18next from "#app/plugins/i18n";
-import { OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
+import { type OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
 import { MysteryEncounterOptionMode } from "#enums/mystery-encounter-option-mode";
 import { MysteryEncounterTier } from "#enums/mystery-encounter-tier";
 import { MysteryEncounterType } from "#enums/mystery-encounter-type";

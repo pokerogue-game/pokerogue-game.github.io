@@ -1,5 +1,5 @@
 import BattleScene from "../battle-scene";
-import { ModalConfig, ModalUiHandler } from "./modal-ui-handler";
+import { type ModalConfig, ModalUiHandler } from "./modal-ui-handler";
 import { addTextObject, TextStyle } from "./text";
 import { Mode } from "./ui";
 import { updateUserInfo } from "#app/account";

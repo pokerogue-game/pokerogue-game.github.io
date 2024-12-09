@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import BattleScene, { bypassLogin, PokeballCounts } from "#app/battle-scene";
+import BattleScene, { bypassLogin, type PokeballCounts } from "#app/battle-scene";
 import Pokemon, { EnemyPokemon, PlayerPokemon } from "#app/field/pokemon";
 import { pokemonPrevolutions } from "#app/data/balance/pokemon-evolutions";
 import PokemonSpecies, { allSpecies, getPokemonSpecies, noStarterFormKeys } from "#app/data/pokemon-species";
@@ -28,7 +28,7 @@ import { Tutorial } from "#app/tutorial";
 import { speciesEggMoves } from "#app/data/balance/egg-moves";
 import { allMoves } from "#app/data/move";
 import { TrainerVariant } from "#app/field/trainer";
-import { Variant } from "#app/data/variant";
+import type { Variant } from "#app/data/variant";
 import { setSettingGamepad, SettingGamepad, settingGamepadDefaults } from "#app/system/settings/settings-gamepad";
 import { setSettingKeyboard, SettingKeyboard } from "#app/system/settings/settings-keyboard";
 import { TagAddedEvent, TerrainChangedEvent, WeatherChangedEvent } from "#app/events/arena";

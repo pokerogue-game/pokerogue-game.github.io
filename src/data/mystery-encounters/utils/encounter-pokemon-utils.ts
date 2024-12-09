@@ -18,7 +18,7 @@ import { getEncounterText, queueEncounterMessage, showEncounterText } from "#app
 import { getPokemonNameWithAffix } from "#app/messages";
 import { modifierTypes, PokemonHeldItemModifierType } from "#app/modifier/modifier-type";
 import { Gender } from "#app/data/gender";
-import { PermanentStat } from "#enums/stat";
+import { type PermanentStat } from "#enums/stat";
 import { VictoryPhase } from "#app/phases/victory-phase";
 import { SummaryUiMode } from "#app/ui/summary-ui-handler";
 import { CustomPokemonData } from "#app/data/custom-pokemon-data";

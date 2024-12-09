@@ -1,6 +1,6 @@
 import BattleScene from "#app/battle-scene";
 import { BattlerIndex, BattleType, ClassicFixedBossWaves } from "#app/battle";
-import { CustomModifierSettings, modifierTypes } from "#app/modifier/modifier-type";
+import { type CustomModifierSettings, modifierTypes } from "#app/modifier/modifier-type";
 import { BattleEndPhase } from "./battle-end-phase";
 import { NewBattlePhase } from "./new-battle-phase";
 import { PokemonPhase } from "./pokemon-phase";

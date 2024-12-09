@@ -1,6 +1,6 @@
 import BattleScene from "#app/battle-scene";
 import { TextStyle, addTextObject } from "#app/ui/text";
-import { nil } from "#app/utils";
+import { type nil } from "#app/utils";
 import i18next from "i18next";
 
 export enum EventType {

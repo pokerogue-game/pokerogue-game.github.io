@@ -17,7 +17,7 @@ import { StatusEffect } from "#enums/status-effect";
 import { getBiomeName } from "#app/data/balance/biomes";
 import { getNatureName, getNatureStatMultiplier } from "#app/data/nature";
 import { loggedInUser } from "#app/account";
-import { Variant, getVariantTint } from "#app/data/variant";
+import { type Variant, getVariantTint } from "#app/data/variant";
 import { Button } from "#enums/buttons";
 import { Ability } from "#app/data/ability";
 import i18next from "i18next";

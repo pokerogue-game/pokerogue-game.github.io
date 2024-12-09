@@ -9,7 +9,7 @@ import MessageUiHandler from "./message-ui-handler";
 import i18next from "i18next";
 import { Button } from "../enums/buttons";
 import { BattleType } from "../battle";
-import { RunEntry } from "../system/game-data";
+import { type RunEntry } from "../system/game-data";
 import { PlayerGender } from "#enums/player-gender";
 import { TrainerVariant } from "../field/trainer";
 import { RunDisplayMode } from "#app/ui/run-info-ui-handler";

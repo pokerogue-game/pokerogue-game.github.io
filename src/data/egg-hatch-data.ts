@@ -1,6 +1,6 @@
 import BattleScene from "#app/battle-scene";
 import { PlayerPokemon } from "#app/field/pokemon";
-import { DexEntry, StarterDataEntry } from "#app/system/game-data";
+import type { DexEntry, StarterDataEntry } from "#app/system/game-data";
 
 /**
  * Stores data associated with a specific egg and the hatched pokemon

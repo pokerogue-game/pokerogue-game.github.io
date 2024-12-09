@@ -4,7 +4,7 @@ import { Mode } from "./ui";
 import * as Utils from "../utils";
 import { addWindow, WindowVariant } from "./ui-theme";
 import MessageUiHandler from "./message-ui-handler";
-import { OptionSelectConfig, OptionSelectItem } from "./abstact-option-select-ui-handler";
+import type { OptionSelectConfig, OptionSelectItem } from "./abstact-option-select-ui-handler";
 import { Tutorial, handleTutorial } from "../tutorial";
 import { loggedInUser, updateUserInfo } from "../account";
 import i18next from "i18next";

@@ -9,7 +9,7 @@ import i18next from "i18next";
 import * as Utils from "#app/utils";
 import { BattlePhase } from "./battle-phase";
 import Overrides from "#app/overrides";
-import { CustomModifierSettings } from "#app/modifier/modifier-type";
+import { type CustomModifierSettings } from "#app/modifier/modifier-type";
 import { isNullOrUndefined, NumberHolder } from "#app/utils";
 
 export class SelectModifierPhase extends BattlePhase {

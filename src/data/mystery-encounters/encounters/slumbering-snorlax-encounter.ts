@@ -7,7 +7,7 @@ import { StatusEffect } from "#enums/status-effect";
 import MysteryEncounter, { MysteryEncounterBuilder } from "#app/data/mystery-encounters/mystery-encounter";
 import { MysteryEncounterOptionBuilder } from "#app/data/mystery-encounters/mystery-encounter-option";
 import { MoveRequirement } from "#app/data/mystery-encounters/mystery-encounter-requirements";
-import { EnemyPartyConfig, EnemyPokemonConfig, generateModifierType, initBattleWithEnemyConfig, leaveEncounterWithoutBattle, loadCustomMovesForEncounter, setEncounterExp, setEncounterRewards, } from "../utils/encounter-phase-utils";
+import { type EnemyPartyConfig, type EnemyPokemonConfig, generateModifierType, initBattleWithEnemyConfig, leaveEncounterWithoutBattle, loadCustomMovesForEncounter, setEncounterExp, setEncounterRewards, } from "../utils/encounter-phase-utils";
 import { queueEncounterMessage } from "#app/data/mystery-encounters/utils/encounter-dialogue-utils";
 import { Moves } from "#enums/moves";
 import { BattlerIndex } from "#app/battle";

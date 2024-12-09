@@ -1,8 +1,8 @@
-import { FormModalUiHandler, InputFieldConfig } from "./form-modal-ui-handler";
-import { ModalConfig } from "./modal-ui-handler";
+import { FormModalUiHandler, type InputFieldConfig } from "./form-modal-ui-handler";
+import type { ModalConfig } from "./modal-ui-handler";
 import i18next from "i18next";
 import { PlayerPokemon } from "#app/field/pokemon";
-import { OptionSelectItem } from "./abstact-option-select-ui-handler";
+import type { OptionSelectItem } from "./abstact-option-select-ui-handler";
 import { isNullOrUndefined } from "#app/utils";
 import { Mode } from "./ui";
 

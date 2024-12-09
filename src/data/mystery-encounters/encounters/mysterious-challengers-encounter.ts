@@ -1,5 +1,5 @@
 import {
-  EnemyPartyConfig,
+  type EnemyPartyConfig,
   initBattleWithEnemyConfig,
   setEncounterRewards,
 } from "#app/data/mystery-encounters/utils/encounter-phase-utils";

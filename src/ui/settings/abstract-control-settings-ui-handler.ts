@@ -1,7 +1,7 @@
 import UiHandler from "#app/ui/ui-handler";
 import BattleScene from "#app/battle-scene";
 import { Mode } from "#app/ui/ui";
-import { InterfaceConfig } from "#app/inputs-controller";
+import { type InterfaceConfig } from "#app/inputs-controller";
 import { addWindow } from "#app/ui/ui-theme";
 import { addTextObject, TextStyle } from "#app/ui/text";
 import { ScrollBar } from "#app/ui/scroll-bar";

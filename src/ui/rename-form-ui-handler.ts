@@ -1,5 +1,5 @@
-import { FormModalUiHandler, InputFieldConfig } from "./form-modal-ui-handler";
-import { ModalConfig } from "./modal-ui-handler";
+import { FormModalUiHandler, type InputFieldConfig } from "./form-modal-ui-handler";
+import type { ModalConfig } from "./modal-ui-handler";
 import i18next from "i18next";
 import { PlayerPokemon } from "#app/field/pokemon";
 

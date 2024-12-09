@@ -1,6 +1,6 @@
 import { randIntRange } from "#app/utils";
 import { StatusEffect } from "#enums/status-effect";
-import i18next, { ParseKeys } from "i18next";
+import i18next, { type ParseKeys } from "i18next";
 
 export class Status {
   public effect: StatusEffect;

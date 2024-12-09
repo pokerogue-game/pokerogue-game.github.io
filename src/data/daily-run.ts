@@ -2,7 +2,7 @@ import { PartyMemberStrength } from "#enums/party-member-strength";
 import { Species } from "#enums/species";
 import BattleScene from "#app/battle-scene";
 import { PlayerPokemon } from "#app/field/pokemon";
-import { Starter } from "#app/ui/starter-select-ui-handler";
+import { type Starter } from "#app/ui/starter-select-ui-handler";
 import * as Utils from "#app/utils";
 import PokemonSpecies, { PokemonSpeciesForm, getPokemonSpecies, getPokemonSpeciesForm } from "#app/data/pokemon-species";
 import { speciesStarterCosts } from "#app/data/balance/starters";

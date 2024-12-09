@@ -1,6 +1,6 @@
 import { BattleSceneEventType, CandyUpgradeNotificationChangedEvent } from "#app/events/battle-scene";
 import { pokemonPrevolutions } from "#app/data/balance/pokemon-evolutions";
-import { Variant, getVariantTint, getVariantIcon } from "#app/data/variant";
+import { type Variant, getVariantTint, getVariantIcon } from "#app/data/variant";
 import { argbFromRgba } from "@material/material-color-utilities";
 import i18next from "i18next";
 import BBCodeText from "phaser3-rex-plugins/plugins/bbcodetext";
@@ -12,15 +12,15 @@ import { Gender, getGenderColor, getGenderSymbol } from "#app/data/gender";
 import { allMoves } from "#app/data/move";
 import { getNatureName } from "#app/data/nature";
 import { pokemonFormChanges } from "#app/data/pokemon-forms";
-import { LevelMoves, pokemonFormLevelMoves, pokemonSpeciesLevelMoves } from "#app/data/balance/pokemon-level-moves";
+import { type LevelMoves, pokemonFormLevelMoves, pokemonSpeciesLevelMoves } from "#app/data/balance/pokemon-level-moves";
 import PokemonSpecies, { allSpecies, getPokemonSpeciesForm, getPokerusStarters } from "#app/data/pokemon-species";
 import { getStarterValueFriendshipCap, speciesStarterCosts, POKERUS_STARTER_COUNT } from "#app/data/balance/starters";
 import { starterPassiveAbilities } from "#app/data/balance/passives";
 import { Type } from "#enums/type";
 import { GameModes } from "#app/game-mode";
-import { AbilityAttr, DexAttr, DexAttrProps, DexEntry, StarterMoveset, StarterAttributes, StarterPreferences, StarterPrefs } from "#app/system/game-data";
+import { AbilityAttr, DexAttr, type DexAttrProps, type DexEntry, type StarterMoveset, type StarterAttributes, type StarterPreferences, StarterPrefs } from "#app/system/game-data";
 import { Tutorial, handleTutorial } from "#app/tutorial";
-import { OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
+import type { OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
 import MessageUiHandler from "#app/ui/message-ui-handler";
 import PokemonIconAnimHandler, { PokemonIconAnimMode } from "#app/ui/pokemon-icon-anim-handler";
 import { StatsContainer } from "#app/ui/stats-container";
@@ -2200,15 +2200,15 @@ export default class StarterSelectUiHandler extends MessageUiHandler {
       const starterMoveData = this.scene.gameData.starterData[speciesId].moveset;
 
       // starterMoveData doesn't have active form moves
-      if (!starterMoveData.hasOwnProperty(props.formIndex)) {
-        this.scene.gameData.starterData[speciesId].moveset[props.formIndex] = this.starterMoveset?.slice(0) as StarterMoveset;
+      if (!starterMoveData?.hasOwnProperty(props.formIndex)) {
+        this.scene.gameData.starterData[speciesId]!.moveset![props.formIndex] = this.starterMoveset?.slice(0) as StarterMoveset;
       }
 
       // does the species' starter move data have its form's starter moves and has it been updated
-      if (starterMoveData.hasOwnProperty(props.formIndex)) {
+      if (starterMoveData?.hasOwnProperty(props.formIndex)) {
         // active form move hasn't been updated
         if (starterMoveData[props.formIndex][existingMoveIndex] !== newMove) {
-          this.scene.gameData.starterData[speciesId].moveset[props.formIndex] = this.starterMoveset?.slice(0) as StarterMoveset;
+          this.scene.gameData.starterData[speciesId]!.moveset![props.formIndex] = this.starterMoveset?.slice(0) as StarterMoveset;
         }
       }
     } else {
@@ -3620,7 +3620,7 @@ export default class StarterSelectUiHandler extends MessageUiHandler {
     if (this.starterPreferences[speciesId]?.shiny || ((caughtAttr & DexAttr.SHINY) > 0n && this.starterPreferences[speciesId]?.shiny !== false)) {
       props += DexAttr.SHINY;
       if (this.starterPreferences[speciesId]?.variant !== undefined) {
-        props += BigInt(Math.pow(2, this.starterPreferences[speciesId]?.variant)) * DexAttr.DEFAULT_VARIANT;
+        props += BigInt(Math.pow(2, this.starterPreferences[speciesId]?.variant ?? 0)) * DexAttr.DEFAULT_VARIANT;
       } else {
         /*  This calculates the correct variant if there's no starter preferences for it.
          *  This gets the highest tier variant that you've caught and adds it to the temp props
@@ -3638,7 +3638,7 @@ export default class StarterSelectUiHandler extends MessageUiHandler {
       props += DexAttr.DEFAULT_VARIANT; // we add the default variant here because non shiny versions are listed as default variant
     }
     if (this.starterPreferences[speciesId]?.form) { // this checks for the form of the pokemon
-      props += BigInt(Math.pow(2, this.starterPreferences[speciesId]?.form)) * DexAttr.DEFAULT_FORM;
+      props += BigInt(Math.pow(2, this.starterPreferences[speciesId]?.form ?? 0)) * DexAttr.DEFAULT_FORM;
     } else {
       // Get the first unlocked form
       props += this.scene.gameData.getFormAttr(this.scene.gameData.getFormIndex(caughtAttr));

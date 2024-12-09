@@ -1,5 +1,5 @@
 import BattleScene from "../battle-scene";
-import { ModalConfig, ModalUiHandler } from "./modal-ui-handler";
+import { type ModalConfig, ModalUiHandler } from "./modal-ui-handler";
 import { Mode } from "./ui";
 import { TextStyle, addTextInputObject, addTextObject } from "./text";
 import { WindowVariant, addWindow } from "./ui-theme";

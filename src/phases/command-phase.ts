@@ -1,7 +1,7 @@
 import BattleScene from "#app/battle-scene";
-import { TurnCommand, BattleType } from "#app/battle";
+import { type TurnCommand, BattleType } from "#app/battle";
 import { TrappedTag, EncoreTag } from "#app/data/battler-tags";
-import { MoveTargetSet, getMoveTargets } from "#app/data/move";
+import { type MoveTargetSet, getMoveTargets } from "#app/data/move";
 import { speciesStarterCosts } from "#app/data/balance/starters";
 import { Abilities } from "#app/enums/abilities";
 import { BattlerTagType } from "#app/enums/battler-tag-type";

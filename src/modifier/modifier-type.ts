@@ -15,7 +15,7 @@ import { ModifierTier } from "#app/modifier/modifier-tier";
 import Overrides from "#app/overrides";
 import { Unlockables } from "#app/system/unlockables";
 import { getVoucherTypeIcon, getVoucherTypeName, VoucherType } from "#app/system/voucher";
-import PartyUiHandler, { PokemonMoveSelectFilter, PokemonSelectFilter } from "#app/ui/party-ui-handler";
+import PartyUiHandler, { type PokemonMoveSelectFilter, type PokemonSelectFilter } from "#app/ui/party-ui-handler";
 import { getModifierTierTextTint } from "#app/ui/text";
 import { formatMoney, getEnumKeys, getEnumValues, isNullOrUndefined, NumberHolder, padInt, randSeedInt, randSeedItem } from "#app/utils";
 import { Abilities } from "#enums/abilities";
@@ -26,7 +26,7 @@ import { Nature } from "#enums/nature";
 import { PokeballType } from "#enums/pokeball";
 import { Species } from "#enums/species";
 import { SpeciesFormKey } from "#enums/species-form-key";
-import { getStatKey, PermanentStat, Stat, TEMP_BATTLE_STATS, TempBattleStat } from "#enums/stat";
+import { getStatKey, type PermanentStat, Stat, TEMP_BATTLE_STATS, type TempBattleStat } from "#enums/stat";
 import { StatusEffect } from "#enums/status-effect";
 import i18next from "i18next";
 
@@ -926,7 +926,7 @@ class AttackTypeBoosterModifierTypeGenerator extends ModifierTypeGenerator {
         return new AttackTypeBoosterModifierType(pregenArgs[0] as Type, 20);
       }
 
-      const attackMoveTypes = party.map(p => p.getMoveset().map(m => m?.getMove()).filter(m => m instanceof AttackMove).map(m => m.type)).flat();
+      const attackMoveTypes = party.map(p => p.getMoveset().map(m => m?.getMove()).filter(m => m instanceof AttackMove).map(m => m!!.type)).flat();
       if (!attackMoveTypes.length) {
         return null;
       }
@@ -1752,7 +1752,7 @@ const modifierPool: ModifierPool = {
     }, 12),
     new WeightedModifierType(modifierTypes.TOXIC_ORB, (party: Pokemon[]) => {
       return party.some(p => {
-        const moveset = p.getMoveset(true).filter(m => !isNullOrUndefined(m)).map(m => m.moveId);
+        const moveset = p.getMoveset(true).filter(m => !isNullOrUndefined(m)).map(m => m!.moveId);
 
         const canSetStatus = p.canSetStatus(StatusEffect.TOXIC, true, true, null, true);
         const isHoldingOrb = p.getHeldItems().some(i => i.type.id === "FLAME_ORB" || i.type.id === "TOXIC_ORB");
@@ -1780,7 +1780,7 @@ const modifierPool: ModifierPool = {
     }, 10),
     new WeightedModifierType(modifierTypes.FLAME_ORB, (party: Pokemon[]) => {
       return party.some(p => {
-        const moveset = p.getMoveset(true).filter(m => !isNullOrUndefined(m)).map(m => m.moveId);
+        const moveset = p.getMoveset(true).filter(m => !isNullOrUndefined(m)).map(m => m!.moveId);
         const canSetStatus = p.canSetStatus(StatusEffect.BURN, true, true, null, true);
         const isHoldingOrb = p.getHeldItems().some(i => i.type.id === "FLAME_ORB" || i.type.id === "TOXIC_ORB");
 

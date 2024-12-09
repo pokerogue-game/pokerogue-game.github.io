@@ -4,8 +4,8 @@ import MysteryEncounter from "#app/data/mystery-encounters/mystery-encounter";
 import { Species } from "#enums/species";
 import { isNullOrUndefined } from "#app/utils";
 import { getSpriteKeysFromSpecies } from "#app/data/mystery-encounters/utils/encounter-pokemon-utils";
-import PlayAnimationConfig = Phaser.Types.Animations.PlayAnimationConfig;
-import { Variant } from "#app/data/variant";
+type PlayAnimationConfig = Phaser.Types.Animations.PlayAnimationConfig;
+import { type Variant } from "#app/data/variant";
 import { doShinySparkleAnim } from "#app/field/anims";
 
 type KnownFileRoot =

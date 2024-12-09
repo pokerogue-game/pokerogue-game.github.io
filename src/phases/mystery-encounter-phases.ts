@@ -1,5 +1,5 @@
 import { BattlerTagLapseType } from "#app/data/battler-tags";
-import MysteryEncounterOption, { OptionPhaseCallback } from "#app/data/mystery-encounters/mystery-encounter-option";
+import MysteryEncounterOption, { type OptionPhaseCallback } from "#app/data/mystery-encounters/mystery-encounter-option";
 import { SeenEncounterData } from "#app/data/mystery-encounters/mystery-encounter-save-data";
 import { getEncounterText } from "#app/data/mystery-encounters/utils/encounter-dialogue-utils";
 import { CheckSwitchPhase } from "#app/phases/check-switch-phase";

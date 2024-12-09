@@ -1,6 +1,6 @@
 import { MysteryEncounterOptionBuilder } from "#app/data/mystery-encounters/mystery-encounter-option";
 import {
-  EnemyPartyConfig, generateModifierType, generateModifierTypeOption,
+  type EnemyPartyConfig, generateModifierType, generateModifierTypeOption,
   initBattleWithEnemyConfig,
   leaveEncounterWithoutBattle, setEncounterExp,
   setEncounterRewards

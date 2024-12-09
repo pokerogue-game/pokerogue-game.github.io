@@ -8,7 +8,7 @@ import Overrides from "#app/overrides";
 import { Phase } from "#app/phase";
 import { TitlePhase } from "#app/phases/title-phase";
 import { SaveSlotUiMode } from "#app/ui/save-slot-select-ui-handler";
-import { Starter } from "#app/ui/starter-select-ui-handler";
+import { type Starter } from "#app/ui/starter-select-ui-handler";
 import { Mode } from "#app/ui/ui";
 import { Species } from "#enums/species";
 import SoundFade from "phaser3-rex-plugins/plugins/soundfade";

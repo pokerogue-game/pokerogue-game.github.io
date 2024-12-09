@@ -1,10 +1,10 @@
 import BattleScene, { startingWave } from "#app/battle-scene";
-import { ModifierTypeFunc, modifierTypes } from "#app/modifier/modifier-type";
+import { type ModifierTypeFunc, modifierTypes } from "#app/modifier/modifier-type";
 import { EnemyPokemon, PokemonMove } from "#app/field/pokemon";
 import * as Utils from "#app/utils";
 import { PokeballType } from "#enums/pokeball";
 import { pokemonEvolutions, pokemonPrevolutions } from "#app/data/balance/pokemon-evolutions";
-import PokemonSpecies, { getPokemonSpecies, PokemonSpeciesFilter } from "#app/data/pokemon-species";
+import PokemonSpecies, { getPokemonSpecies, type PokemonSpeciesFilter } from "#app/data/pokemon-species";
 import { tmSpecies } from "#app/data/balance/tms";
 import { Type } from "#enums/type";
 import { doubleBattleDialogue } from "#app/data/dialogue";

@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import { classicFixedBattles, FixedBattleConfig, FixedBattleConfigs } from "./battle";
+import { classicFixedBattles, FixedBattleConfig, type FixedBattleConfigs } from "./battle";
 import BattleScene from "./battle-scene";
 import { allChallenges, applyChallenges, Challenge, ChallengeType, copyChallenge } from "./data/challenge";
 import PokemonSpecies, { allSpecies } from "./data/pokemon-species";

@@ -7,7 +7,7 @@ import { MoneyMultiplierModifier, PokemonHeldItemModifier } from "./modifier/mod
 import { PokeballType } from "#enums/pokeball";
 import { trainerConfigs } from "#app/data/trainer-config";
 import { SpeciesFormKey } from "#enums/species-form-key";
-import Pokemon, { EnemyPokemon, PlayerPokemon, QueuedMove } from "#app/field/pokemon";
+import Pokemon, { EnemyPokemon, PlayerPokemon, type QueuedMove } from "#app/field/pokemon";
 import { ArenaTagType } from "#enums/arena-tag-type";
 import { BattleSpec } from "#enums/battle-spec";
 import { Moves } from "#enums/moves";
@@ -18,7 +18,7 @@ import { TrainerType } from "#enums/trainer-type";
 import i18next from "#app/plugins/i18n";
 import MysteryEncounter from "#app/data/mystery-encounters/mystery-encounter";
 import { MysteryEncounterMode } from "#enums/mystery-encounter-mode";
-import { CustomModifierSettings } from "#app/modifier/modifier-type";
+import type { CustomModifierSettings } from "#app/modifier/modifier-type";
 import { ModifierTier } from "#app/modifier/modifier-tier";
 import { MysteryEncounterType } from "#enums/mystery-encounter-type";
 

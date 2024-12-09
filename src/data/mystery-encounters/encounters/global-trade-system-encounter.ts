@@ -15,7 +15,7 @@ import { MysteryEncounterOptionMode } from "#enums/mystery-encounter-option-mode
 import { NumberHolder, isNullOrUndefined, randInt, randSeedInt, randSeedShuffle } from "#app/utils";
 import Pokemon, { EnemyPokemon, PlayerPokemon, PokemonMove } from "#app/field/pokemon";
 import { HiddenAbilityRateBoosterModifier, PokemonFormChangeItemModifier, PokemonHeldItemModifier, ShinyRateBoosterModifier, SpeciesStatBoosterModifier } from "#app/modifier/modifier";
-import { OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
+import { type OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
 import PokemonData from "#app/system/pokemon-data";
 import i18next from "i18next";
 import { Gender, getGenderSymbol } from "#app/data/gender";

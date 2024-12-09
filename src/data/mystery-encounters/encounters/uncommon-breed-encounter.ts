@@ -1,5 +1,5 @@
 import { MysteryEncounterOptionBuilder } from "#app/data/mystery-encounters/mystery-encounter-option";
-import { EnemyPartyConfig, initBattleWithEnemyConfig, leaveEncounterWithoutBattle, setEncounterExp, setEncounterRewards } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
+import { type EnemyPartyConfig, initBattleWithEnemyConfig, leaveEncounterWithoutBattle, setEncounterExp, setEncounterRewards } from "#app/data/mystery-encounters/utils/encounter-phase-utils";
 import { CHARMING_MOVES } from "#app/data/mystery-encounters/requirements/requirement-groups";
 import Pokemon, { EnemyPokemon, PokemonMove } from "#app/field/pokemon";
 import { getPartyLuckValue } from "#app/modifier/modifier-type";

@@ -1,4 +1,4 @@
-import BattleScene, { InfoToggle } from "../battle-scene";
+import BattleScene, { type InfoToggle } from "../battle-scene";
 import { addTextObject, TextStyle } from "./text";
 import { getTypeDamageMultiplierColor } from "#app/data/type";
 import { Type } from "#enums/type";

@@ -8,10 +8,10 @@ import { GameMode, GameModes, getGameMode } from "#app/game-mode";
 import { Modifier } from "#app/modifier/modifier";
 import { getDailyRunStarterModifiers, ModifierPoolType, modifierTypes, regenerateModifierPoolThresholds } from "#app/modifier/modifier-type";
 import { Phase } from "#app/phase";
-import { SessionSaveData } from "#app/system/game-data";
+import { type SessionSaveData } from "#app/system/game-data";
 import { Unlockables } from "#app/system/unlockables";
 import { vouchers } from "#app/system/voucher";
-import { OptionSelectConfig, OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
+import type { OptionSelectConfig, OptionSelectItem } from "#app/ui/abstact-option-select-ui-handler";
 import { SaveSlotUiMode } from "#app/ui/save-slot-select-ui-handler";
 import { Mode } from "#app/ui/ui";
 import * as Utils from "#app/utils";
@@ -219,9 +219,9 @@ export class TitlePhase extends Phase {
 
         regenerateModifierPoolThresholds(party, ModifierPoolType.DAILY_STARTER);
 
-        const modifiers: Modifier[] = Array(3).fill(null).map(() => modifierTypes.EXP_SHARE().withIdFromFunc(modifierTypes.EXP_SHARE).newModifier())
-          .concat(Array(3).fill(null).map(() => modifierTypes.GOLDEN_EXP_CHARM().withIdFromFunc(modifierTypes.GOLDEN_EXP_CHARM).newModifier()))
-          .concat([ modifierTypes.MAP().withIdFromFunc(modifierTypes.MAP).newModifier() ])
+        const modifiers: Modifier[] = Array(3).fill(null).map(() => modifierTypes.EXP_SHARE().withIdFromFunc(modifierTypes.EXP_SHARE).newModifier()!)
+          .concat(Array(3).fill(null).map(() => modifierTypes.GOLDEN_EXP_CHARM().withIdFromFunc(modifierTypes.GOLDEN_EXP_CHARM).newModifier()!))
+          .concat([ modifierTypes.MAP().withIdFromFunc(modifierTypes.MAP).newModifier()! ])
           .concat(getDailyRunStarterModifiers(party))
           .filter((m) => m !== null);
 
